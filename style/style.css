@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.rectangle {
+    display:none;
+    width: 80%;
+    height: 80%;
+    background-color: green;
+}
+.botao, .botao2, .botao3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botao {
+}
+
+.botao2 {
+
+}
+
+.botao3 {
+
+}
+.botao h1, .botao2 h1, .botao3 h1 {
+    cursor:pointer;
+}
+.itemone {
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    cursor:pointer;
+  
+}
+.itemone img {
+    width:100%;
+    height:auto;
+    border-radius:100px;
+}
+
+.itemone2 {
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    cursor:pointer;
+  
+}
+.itemone2 img {
+    width:100%;
+    height:auto;
+    border-radius:100px;
+}
+
+.itemone3 {
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    cursor:pointer;
+  
+}
+.itemone3 img {
+    width:100%;
+    height:auto;
+    border-radius:100px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao {
+    width: 100%;
+    height: 100%;
+    }
+    .botao h1,.botao2 h1, .botao3 h1 {
+        font-size: 15px;
+
+    }
+    
+    .botao2 {
+    width: 100%;
+    height: 100%;
+    }
+    
+    .botao3 {
+    width: 100%;
+    height: 100%;
+    }
+    
+    .itemone {
+        width:150px;
+        height:150px;
+        border-radius:40x;
+        cursor:pointer;
+      
+    }
+    .itemone img {
+        width:100%;
+        height:auto;
+        border-radius:100px;
+    }
+    
+    .itemone2 {
+        width:150px;
+        height:150px;
+        border-radius:100px;
+        cursor:pointer;
+      
+    }
+    .itemone2 img {
+        width:100%;
+        height:auto;
+        border-radius:100px;
+    }
+
+    .itemone3 {
+        width:150px;
+        height:150px;
+        border-radius:50px;
+        cursor:pointer;
+      
+    }
+    .itemone3 img {
+        width:100%;
+        height:auto;
+        border-radius:100%;
+    }
+}
