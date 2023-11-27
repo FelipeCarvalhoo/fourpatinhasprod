@@ -64,8 +64,4 @@ let primeiraImagem3 = listaDeProdutos[2].imagem;
         // Definir o atributo src da tag img com a URL da imagem
         first_image3.src = primeiraImagem3;
 
-        const mod = document.querySelector('.rectangle h1');
-        mod.innerHTML = "Olá, este texto foi modificado!"
-        const altera = document.querySelector('.modifica');
-        altera.innerHTML = "Mais uma alteração s2"
         

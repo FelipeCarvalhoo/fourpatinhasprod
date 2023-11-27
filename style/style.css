@@ -9,9 +9,24 @@ html, body {
 }
 .rectangle {
     display:none;
-    width: 80%;
-    height: 80%;
-    background-color: green;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.rectangleson {
+ width: 100%;
+ height: 100%;
+ background-color: blue;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+.item {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
 }
 .botao, .botao2, .botao3 {
     display: flex;
@@ -135,5 +150,18 @@ html, body {
         width:100%;
         height:auto;
         border-radius:100%;
+    }
+    
+    .rectangle {
+        flex-direction: row;
+        background-color: red;
+    }
+    .item1, .item2, .item3, .item4, .item5, .item6,
+    .item7, .item8, .item9 {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: black;
+        margin: 5px;
     }
 }
