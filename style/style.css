@@ -17,17 +17,12 @@ html, body {
 .rectangleson {
  width: 100%;
  height: 100%;
- background-color: blue;
+ background-color: rgb(202, 202, 223);
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
 }
-.item {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: black;
-}
+
 .botao, .botao2, .botao3 {
     display: flex;
     flex-direction: column;
@@ -161,7 +156,6 @@ html, body {
         width: 50px;
         height: 50px;
         border-radius: 25px;
-        background-color: black;
         margin: 5px;
     }
 }
