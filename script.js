@@ -64,4 +64,57 @@ let primeiraImagem3 = listaDeProdutos[2].imagem;
         // Definir o atributo src da tag img com a URL da imagem
         first_image3.src = primeiraImagem3;
 
-        
+        let cliqueIMG = document.querySelector('.gatoDb');
+cliqueIMG.addEventListener('click', function() {
+  document.querySelector(".todaAtela").style.display = "flex";
+  document.querySelector('#elemento-movel').style.display = "none";
+  document.querySelector('.item-img').style.display = "none";
+  document.querySelector('.item-img2').style.display = "none";
+  });
+
+  //codigo da IA
+  document.addEventListener("DOMContentLoaded", function () {
+    const chatMessages = document.getElementById("chat-messages");
+    const userInput = document.getElementById("user-input");
+
+    const knowledgeBase = {
+        "qual é o seu nome": "Meu nome é ChatBot.",
+        "como você está": "Eu sou apenas um programa, mas obrigado por perguntar!",
+        "quem criou você": "Fui criado por uma equipe de desenvolvedores."
+    };
+
+    function addMessage(sender, message) {
+        const messageElement = document.createElement("div");
+        messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+        chatMessages.appendChild(messageElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function processUserInput() {
+        const userMessage = userInput.value.toLowerCase();
+
+        if (knowledgeBase[userMessage]) {
+            addMessage("IA", knowledgeBase[userMessage]);
+        } else {
+            const userResponse = prompt("Desculpe, eu não sei a resposta. Pode me ensinar?");
+
+            if (userResponse) {
+                knowledgeBase[userMessage] = userResponse;
+                addMessage("IA", "Obrigado por me ensinar!");
+            } else {
+                addMessage("IA", "Sem problema, talvez eu aprenda na próxima vez!");
+            }
+        }
+    }
+
+    userInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            processUserInput();
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elementoMovel = document.getElementById('elemento-movel');
+
+});
