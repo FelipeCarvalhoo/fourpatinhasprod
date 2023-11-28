@@ -64,7 +64,7 @@ let primeiraImagem3 = listaDeProdutos[2].imagem;
         // Definir o atributo src da tag img com a URL da imagem
         first_image3.src = primeiraImagem3;
 
-        let cliqueIMG = document.querySelector('.item-img');
+        let cliqueIMG = document.querySelector('.gatoDb');
 cliqueIMG.addEventListener('click', function() {
   document.querySelector(".todaAtela").style.display = "flex";
   document.querySelector('#elemento-movel').style.display = "none";

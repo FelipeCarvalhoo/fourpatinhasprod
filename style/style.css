@@ -117,7 +117,7 @@ html, body {
     height: 20%;
     color: #fff;
     font-size: 18px;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
