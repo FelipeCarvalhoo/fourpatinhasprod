@@ -147,12 +147,12 @@ html, body {
     }
     25% {
         top: 0;
-        left: calc(100vw - 150px);
+        left: calc(100vw - 80px);
         color:red;
     }
     50% {
         top: calc(100vh - 50px);
-        left: calc(100vw - 150px);
+        left: calc(100vw - 80px);
         color:black;
     }
     75% {
