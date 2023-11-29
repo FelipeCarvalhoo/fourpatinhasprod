@@ -4,14 +4,22 @@ elemento.addEventListener('click', function() {
   document.querySelector('.botao').style.display = "none";
   document.querySelector('.botao2').style.display = "none";
   document.querySelector('.botao3').style.display = "none";
+
+  document.querySelector('.item-img').src = listaDeProdutos[3].imagem;
+  document.querySelector('.item-img2').src = listaDeProdutos[4].imagem;
   });
 
   let elemento2 = document.querySelector('.botao2');
 elemento2.addEventListener('click', function() {
-  document.getElementById('retangulo1').style.display = 'block';
+ document.getElementById('retangulo1').style.display = 'block';
   document.querySelector('.botao').style.display = "none";
   document.querySelector('.botao2').style.display = "none";
   document.querySelector('.botao3').style.display = "none";
+  document.querySelector('.rectangleson').style.display = "none";
+  document.querySelector('.rectangleson2').style.display = "block";
+
+  document.querySelector('.item-img3').src = listaDeProdutos[5].imagem;
+  document.querySelector('.item-img4').src = listaDeProdutos[4].imagem;
   });
 
   let elemento3 = document.querySelector('.botao3');
@@ -20,6 +28,11 @@ elemento3.addEventListener('click', function() {
   document.querySelector('.botao').style.display = "none";
   document.querySelector('.botao2').style.display = "none";
   document.querySelector('.botao3').style.display = "none";
+  document.querySelector('.rectangleson').style.display = "none";
+  document.querySelector('.rectangleson3').style.display = "block";
+
+  document.querySelector('.item-img5').src = listaDeProdutos[6].imagem;
+  document.querySelector('.item-img6').src = listaDeProdutos[4].imagem;
   });
 
   function mostrarJanela() {
@@ -45,6 +58,16 @@ elemento3.addEventListener('click', function() {
         nome: 'Pantufa',
         quantidade: 0,
         preço: 'R$:0,99'
+    }, {
+        imagem: 'imagens/rbl.gif'
+    }, {
+        imagem: 'imagens/load.gif'
+    }
+    ,{
+        imagem: 'imagens/fud.gif'
+    }
+    ,{
+        imagem: 'imagens/gok.gif'
     }
     // Adicione mais produtos conforme necessário
 ];
@@ -63,6 +86,7 @@ let primeiraImagem2 = listaDeProdutos[1].imagem;
 let primeiraImagem3 = listaDeProdutos[2].imagem;
         // Definir o atributo src da tag img com a URL da imagem
         first_image3.src = primeiraImagem3;
+        let primeiraImagem4 = listaDeProdutos[3].imagem;
 
         let cliqueIMG = document.querySelector('.gatoDb');
 cliqueIMG.addEventListener('click', function() {
