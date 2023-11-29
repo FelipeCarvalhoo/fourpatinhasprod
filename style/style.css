@@ -128,6 +128,8 @@ html, body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    animation: girarImagem 5s linear infinite; /* Ajuste a duração conforme necessário */
+
 }
 
 .item-img {
@@ -139,6 +141,15 @@ html, body {
     height: 50%;
 }
 
+@keyframes girarImagem {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes moverElemento {
     0% {
         top: 0;
@@ -148,24 +159,50 @@ html, body {
     25% {
         top: 0;
         left: calc(100vw - 80px);
-        color:red;
+        color: red;
     }
     50% {
-        top: calc(100vh - 50px);
-        left: calc(100vw - 80px);
-        color:black;
+        top: calc(50vh - 25px);
+        left: calc(50vw - 40px);
+        color: black;
     }
     75% {
         top: calc(100vh - 50px);
-        left: 0;
-        color:blue;
+        left: calc(100vw - 80px);
+        color: blue;
     }
     100% {
         top: 0;
         left: 0;
-        color:pink;
+        color: pink;
+    }
+     0% {
+        top: 0;
+        left: 0;
+        color: yellow;
+    }
+    25% {
+        top: 0;
+        left: calc(100vw - 80px);
+        color: red;
+    }
+    50% {
+        top: calc(50vh - 25px);
+        left: calc(50vw - 40px);
+        color: black;
+    }
+    75% {
+        top: calc(100vh - 50px);
+        left: calc(100vw - 80px);
+        color: blue;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        color: pink;
     }
 }
+
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
