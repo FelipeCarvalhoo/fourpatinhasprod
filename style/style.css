@@ -161,6 +161,22 @@ html, body {
     animation: girarImagem 5s linear infinite; /* Ajuste a duração conforme necessário */
 
 }
+.itemone, .itemone2, .itemone3 {
+    background-size: cover;
+    animation: rotateImage 4s infinite linear; /* 4 segundos, infinito, linear */
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+} 
 
 .item-img {
     width:100%;
