@@ -6,6 +6,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+
 }
 .rectangle {
     display:none;
@@ -42,17 +43,33 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    animation: changeColor 3s infinite linear; /* 3 segundos, infinito, linear */
 }
 .botao {
+    background: linear-gradient(to right, #ffcc00, #ff6666);
 }
 
 .botao2 {
-
+    background: linear-gradient(to right, #66ccff, #cc99ff);
 }
 
 .botao3 {
-
+    background: linear-gradient(to right, #99ff66, #ff9966);
 }
+
+@keyframes changeColor {
+    0% {
+        background: linear-gradient(to right, #ffcc00, #ff6666);
+    }
+    50% {
+        background: linear-gradient(to right, #66ccff, #cc99ff);
+    }
+    100% {
+        background: linear-gradient(to right, #99ff66, #ff9966);
+    }
+}
+
 .botao h1, .botao2 h1, .botao3 h1 {
     cursor:pointer;
 }
